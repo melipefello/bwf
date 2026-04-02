@@ -2,12 +2,15 @@
 
 Static HTML reference for [Nick-E’s BWF Primer](https://nick-e.com/primer/). Open `index.html` locally or host on **GitHub Pages**.
 
+## Repository
+
+Remote: [github.com/melipefello/bwf](https://github.com/melipefello/bwf)
+
 ## GitHub Pages
 
-1. Create a repository (e.g. `BWF-Primer`) and push this folder as the root.
-2. Repository **Settings → Pages**.
-3. **Build and deployment**: Source **Deploy from a branch**, branch **main** (or `master`), folder **/ (root)**.
-4. After build, the site is at `https://<user>.github.io/<repo>/`.
+1. Repository **Settings → Pages**.
+2. **Build and deployment**: Source **Deploy from a branch**, branch **main**, folder **/ (root)**.
+3. After the first deploy, the site is at **https://melipefello.github.io/bwf/**.
 
 Internal links use root-relative paths (`CSS/`, `DAYS/`, `NUTRITION/`) so they work on that URL. An empty `.nojekyll` file is included so Jekyll does not touch the site.
 
