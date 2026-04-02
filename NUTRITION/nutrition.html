@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Nutrition — BWF Primer Reference</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#build-up">14-day build-up</a>
+        <a href="nutrition.html">Nutrition</a>
+      </div>
+    </header>
+    <main>
+      <h1>Nutrition (personal targets)</h1>
+      <p class="muted">
+        Personal reference only—not medical advice. Adjust with a professional
+        if you have health conditions.
+      </p>
+
+      <h2>Protein</h2>
+      <ul>
+        <li>
+          <strong>0.8 g per lb</strong> body weight, minimum
+          <strong>120 g/day</strong>.
+        </li>
+        <li>
+          At <strong>94 kg</strong> (~207 lb): about
+          <strong>165 g</strong> protein per day.
+        </li>
+      </ul>
+      <p>
+        Formula: <code>max(120, bodyweight_lb × 0.8)</code> grams per day.
+      </p>
+
+      <h2>Fat</h2>
+      <ul>
+        <li><strong>0.3 g per lb</strong> body weight.</li>
+        <li>
+          At <strong>94 kg</strong>: about <strong>62 g</strong> fat per day.
+        </li>
+      </ul>
+      <p>Formula: <code>bodyweight_lb × 0.3</code> grams per day.</p>
+
+      <h2>Calories</h2>
+      <p>
+        Target roughly <strong>10–20% below TDEE</strong> (total daily energy
+        expenditure).
+      </p>
+      <ul>
+        <li>10% deficit: daily calories ≈ <strong>TDEE × 0.90</strong></li>
+        <li>20% deficit: daily calories ≈ <strong>TDEE × 0.80</strong></li>
+      </ul>
+      <p>
+        <strong>Your TDEE</strong> (fill in from your preferred calculator):
+        <strong>________ kcal</strong>
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Deficit</th>
+              <th>Daily target (kcal)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10%</td>
+              <td>TDEE × 0.90 → <em>compute</em></td>
+            </tr>
+            <tr>
+              <td>20%</td>
+              <td>TDEE × 0.80 → <em>compute</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Carbs</h2>
+      <p>
+        After you set protein and fat, remaining calories typically come from
+        <strong>carbohydrates</strong> (whole-food sources when possible).
+      </p>
+
+      <p class="footer-attribution">
+        Training program reference:
+        <a href="https://nick-e.com/primer/">BWF Primer</a> by Nick-E.
+      </p>
+    </main>
+    <script src="../JS/app.js"></script>
+  </body>
+</html>
