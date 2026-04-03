@@ -1,5 +1,9 @@
 (function () {
-  var KEY = "bwf_primer_days_done";
+  var program = document.body.getAttribute("data-program") || "primer";
+  var KEY =
+    program === "home14"
+      ? "home14_days_done"
+      : "bwf_primer_days_done";
 
   function load() {
     try {
@@ -30,6 +34,23 @@
 
   document.querySelectorAll("[data-day-link]").forEach(function (el) {
     var d = el.getAttribute("data-day-link");
-    if (d && load()[d]) el.classList.add("is-done");
+    if (d) {
+      try {
+        var primer = JSON.parse(
+          localStorage.getItem("bwf_primer_days_done") || "{}"
+        );
+        if (primer[d]) el.classList.add("is-done");
+      } catch (e) {}
+    }
+  });
+
+  document.querySelectorAll("[data-home14-link]").forEach(function (el) {
+    var d = el.getAttribute("data-home14-link");
+    if (d) {
+      try {
+        var h = JSON.parse(localStorage.getItem("home14_days_done") || "{}");
+        if (h[d]) el.classList.add("is-done");
+      } catch (e) {}
+    }
   });
 })();
